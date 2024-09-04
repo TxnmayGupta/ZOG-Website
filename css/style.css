@@ -32,55 +32,17 @@ header
   justify-content: space-between;
   align-items: center;
 }
-header .logo
-{
-  color: grey;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.logo a {
+header .logo a {
   display: inline-block;
   text-decoration: none;
 }
-.logo img {
+header .logo img {
     width: 200px;
     height: auto;
 }
-.cform {
-  position: relative;
-  width: 500px;
-  height: 500px;
-}
-.cform input,
-.cform textarea {
-  margin-bottom: 10px;
-  background: grey;
-  border: 1px solid rgb(88, 88, 88);
-  width: 500px;
-  padding-left: 10px;
-  font-size: 1.5em;
-}
-.cform input
-{
-  height: 50px;
-}
-.cform textarea
-{
-  height: 100px;
-}
-.cform button{
-  margin-left: 30%;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  background-color: grey;
-  color: #111;
-
-}
-.cform label{
-  font-family: frost;
-  color: grey;
-  font-size: 2em;
+header .logo1 img {
+  width: 400px;
+  height: auto;
 }
 .toggle
 {
@@ -268,7 +230,44 @@ header .logo
 {
   color: #111; 
 }
+/* contact page */
+.cform {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.cform input,
+.cform textarea {
+  margin-bottom: 10px;
+  background: grey;
+  border: 1px solid rgb(88, 88, 88);
+  width: 500px;
+  padding-left: 10px;
+  font-size: 1.5em;
+}
+.cform input
+{
+  height: 50px;
+}
+.cform textarea
+{
+  height: 100px;
+}
+.cform button{
+  margin-left: 30%;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: grey;
+  color: #111;
 
+}
+.cform label{
+  font-family: frost;
+  color: grey;
+  font-size: 2em;
+}
+/* window resizing */
 @media (max-width: 991px) or (max-height: 900px)
 {
   .showcase,
@@ -276,8 +275,8 @@ header .logo
   {
     padding: 40px;
   }
-  .logo img {
-    width: 150px;
+  header .logo img {
+    width: 100px;
   }
   .text h2
   {
@@ -290,5 +289,8 @@ header .logo
   .address
   {
     font-size: .75em;
+  }
+  header .logo1 img {
+    width: 200px;
   }
 }
