@@ -243,12 +243,12 @@ header .logo
     padding: 40px;
   }
   .logo img {
-    width: 50px;
+    width: 30px;
     /* opacity: 0; */
   }
   .text h2
   {
-    font-size: 4em;
+    font-size: 3em;
   }
   .text h3
   {
