@@ -293,4 +293,9 @@ header .logo1 img {
   header .logo1 img {
     width: 200px;
   }
+  .cform input, 
+  .cfrom textarea
+  {
+    width: 200px;
+  }
 }
