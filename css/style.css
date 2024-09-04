@@ -268,7 +268,7 @@ header .logo1 img {
   font-size: 2em;
 }
 /* window resizing */
-@media (max-width: 991px) or (max-height: 900px)
+@media (max-width: 798px) or (max-height: 600px)
 {
   .showcase,
   .showcase header
