@@ -449,4 +449,7 @@ header .logo1 img {
   .blog-box-container {
     grid-template-columns: 1fr;
   }
+  .blog-col .text p {
+    font-size: .6em;
+  }
 }
