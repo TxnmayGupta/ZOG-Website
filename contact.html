@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>ZonedOut Gaming website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>ZonedOut Gaming</title>
 </head>
 <body>
     <section class="showcase">
@@ -17,17 +18,29 @@
             <div class="toggle"></div>
         </header>
 
-        <div class="cform" action="https://formsubmit.co/zonedoutcbe@gmail.com" method="POST">
-            <form>
+        <div class="cform">
+            <form id="contact-form" action="https://formsubmit.co/a34fa32f88d5631257591e85fd3aa737" method="POST">
+
+                <!-- Honeypot -->
+                 <input type="text" name="_honey" style="display: none;">
+                <!-- Disable Captcha -->
+                 <input type="hidden" name="_captcha" value="false">
+                <!-- redirect on success -->
+                 <input type="hidden" name="_next" value="https://dhruvguptx.github.io/zog/thank-you.html">
+
                 <label class="cform-label">Name</label>
-                <input type="text" name="Name" required>
+                <input type="text" id="name" name="Name" required>
+                
                 <label class="cform-label">Mobile</label>
-                <input type="number" name="Mobile" maxlength="10" required>
+                <input type="text" id="mobile" name="Mobile" maxlength="10" required>
+                
                 <label class="cform-label">Email</label>
-                <input type="email" name="Email" required>
+                <input type="email" id="email" name="Email" required>
+                
                 <label class="cform-label">Message</label>
-                <textarea name="Message" required></textarea>
-                <button type="submit">Send</button>
+                <textarea id="message" name="Message" required></textarea>
+                
+                <button type="submit" onclick="submitForm()">Send</button>
             </form>
         </div>
 
@@ -45,8 +58,8 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="#">News</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </div>
 
@@ -58,6 +71,22 @@
             menuToggle.classList.toggle('active');
             showcase.classList.toggle('active');
         })
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const data = {
+                name: name,
+                mobile: mobile,
+                email: email,
+                message: message
+            };
+
+            console.log(data)            
+        }
     </script>
 </body>
 </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>ZonedOut Gaming</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo1">
+                <a href="./index.html">
+                    <img src="./images/logo_full.png" alt="ZOG">
+                </a>
+            </h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <section id="blog">
+            <div class="blog-box-container">
+                <!-- box 1 -->
+                <div class="blog-box">
+                    <div class="blog-box-img">
+                        <a href="./pc-blog.html">
+                            <img src="./images/pc.png" alt="blog img">
+                        </a>
+                    </div>
+                    <div class="blog-box-text">
+                        <h3><a href="./pc-blog.html">PC</a></h3>
+                        <p class="spacer"><span class="bold-text">Specs</span><br>Processor - Intel i7 12700F<br>GPU - 3070 Ti</p>
+                        <p><span class="bold-text">Games</span><br>Valorant<br>Fortnite</p>
+                        <div class="blog-author">
+                            <div class="blog-author-img">
+                                <img src="./images/logo_web.png" alt="">
+                            </div>
+                            <div class="blog-author-text">
+                                <h3>ZOG</h3>
+                                <span>Apr 1, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 2 -->
+                <div class="blog-box">
+                    <div class="blog-box-img">
+                        <a href="./ps-blog.html">
+                            <img src="./images/pc.png" alt="blog img">
+                        </a>
+                    </div>
+                    <div class="blog-box-text">
+                        <h3><a href="./ps-blog.html">PS-5</a></h3>
+                        <p>WWE 2k24<br>FC24<br>Call of Duty MW3<br>God of War Ragnarok<br>GTA V<br>Mortal Kombat<br>Gran Turismo</p>
+                        <div class="blog-author">
+                            <div class="blog-author-img">
+                                <img src="./images/logo_web.png" alt="">
+                            </div>
+                            <div class="blog-author-text">
+                                <h3>ZOG</h3>
+                                <span>Apr 1, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 3 -->
+                <div class="blog-box">
+                    <div class="blog-box-img">
+                        <a href="./vr-blog.html">
+                            <img src="./images/pc.png" alt="blog img">
+                        </a>
+                    </div>
+                    <div class="blog-box-text">
+                        <h3><a href="./vr-blog.html">VR - Meta Quest 3</a></h3>
+                        <p>iB Cricket<br>Beat Saber<br>F1 24<br>Pistol Whip<br>Half Life Alyx<br>Lego Bricktales<br>Tetris Effect</p>
+                        <div class="blog-author">
+                            <div class="blog-author-img">
+                                <img src="./images/logo_web.png" alt="">
+                            </div>
+                            <div class="blog-author-text">
+                                <h3>ZOG</h3>
+                                <span>Apr 1, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <ul class="social">
+            <li><a href="#"><img src="./images/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/twitter.png"></a></li>
+            <li><a href="#"><img src="./images/instagram.png"></a></li>
+        </ul>
+        <div class="address">
+            <p>📞+91 97890 89000</p>
+            <p>📩 zonedoutcbe@gmail.com</p>
+        </div>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
