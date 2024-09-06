@@ -450,6 +450,7 @@ header .logo1 img {
     grid-template-columns: 1fr;
   }
   .blog-col .text p {
+    font-size: .8em;
     margin-top: 10px;
   }
 }
