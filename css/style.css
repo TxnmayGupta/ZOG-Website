@@ -449,8 +449,12 @@ header .logo1 img {
   .blog-box-container {
     grid-template-columns: 1fr;
   }
+  .blog-col {
+    gap: 100px;
+  }
   .blog-col .text p {
-    font-size: .8em;
+    font-size: .7em;
     margin-top: 10px;
+    line-height: 1;
   }
 }
